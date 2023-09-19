@@ -8,10 +8,11 @@
 import UIKit
 
 class PayTblCell: UITableViewCell {
-
+    @IBOutlet weak var viewContent: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewContent.layer.cornerRadius = 8
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeVC" customModule="ChiNhungNTT47" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Agk-bv-VTE"/>
+                        <viewControllerLayoutGuide type="bottom" id="7NJ-3H-JDf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjj-J0-NQd">
+                                <rect key="frame" x="180" y="239" width="33" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pay">
+                                    <color key="titleColor" red="0.27058823529999998" green="0.3921568627" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushPay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vau-aB-tPv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-Gt-gmA">
+                                <rect key="frame" x="159" y="311" width="75" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Voucher">
+                                    <color key="titleColor" red="0.27058823529999998" green="0.3921568627" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushVoucher:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="298-gI-gkl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bấm dô đeeeeeeee !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-Q0-m3c">
+                                <rect key="frame" x="90.666666666666686" y="149" width="212" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMF-jJ-BcE">
+                                <rect key="frame" x="160" y="379" width="73" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TestUI"/>
+                                <connections>
+                                    <action selector="pushTestUI:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zfG-aq-sQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGG-n2-stt">
+                                <rect key="frame" x="97" y="440" width="199" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Anh Quốc 5h30 dí task"/>
+                                <connections>
+                                    <action selector="pushPersonalSetting:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eMj-Ks-Tbi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RGG-n2-stt" firstAttribute="top" secondItem="BMF-jJ-BcE" secondAttribute="bottom" constant="26" id="1Ec-vd-xfE"/>
+                            <constraint firstItem="SsU-Q0-m3c" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3OS-5h-Qp3"/>
+                            <constraint firstItem="Yjj-J0-NQd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="180" id="9Zw-Jc-AcY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BMF-jJ-BcE" secondAttribute="trailing" constant="144" id="BLj-qE-JdP"/>
+                            <constraint firstItem="Yjj-J0-NQd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BSe-h5-h4V"/>
+                            <constraint firstItem="RGG-n2-stt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="E5K-eD-tNc"/>
+                            <constraint firstItem="hhm-Gt-gmA" firstAttribute="top" secondItem="Yjj-J0-NQd" secondAttribute="bottom" constant="36" id="Gw5-3k-tVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RGG-n2-stt" secondAttribute="trailing" constant="81" id="Kam-9P-QjQ"/>
+                            <constraint firstItem="BMF-jJ-BcE" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="144" id="Rb5-rS-i2A"/>
+                            <constraint firstItem="RGG-n2-stt" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="81" id="gTT-Cg-qU5"/>
+                            <constraint firstItem="SsU-Q0-m3c" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="90" id="hok-bs-3rK"/>
+                            <constraint firstItem="hhm-Gt-gmA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="osg-3n-s7F"/>
+                            <constraint firstItem="BMF-jJ-BcE" firstAttribute="top" secondItem="hhm-Gt-gmA" secondAttribute="bottom" constant="32" id="oui-hx-Ot2"/>
+                            <constraint firstItem="BMF-jJ-BcE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="yfw-yB-4nZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Voucher" destination="hhm-Gt-gmA" id="74t-KK-DHF"/>
+                        <outlet property="btnPay" destination="Yjj-J0-NQd" id="tCl-T0-7WA"/>
+                        <outlet property="testUI" destination="BMF-jJ-BcE" id="F9d-Sl-Frg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.89312977099236" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

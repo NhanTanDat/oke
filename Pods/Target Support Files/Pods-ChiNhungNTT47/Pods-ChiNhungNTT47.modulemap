@@ -1,0 +1,6 @@
+framework module Pods_ChiNhungNTT47 {
+  umbrella header "Pods-ChiNhungNTT47-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,12 +14,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="TelecomBillTblCell" customModule="ChiNhungNTT47" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6q-gv-7E5">
-                        <rect key="frame" x="16" y="24" width="288" height="20"/>
+                        <rect key="frame" x="0.0" y="24" width="320" height="20"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoá đơn viễn thông" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTH-4w-wOb">
                                 <rect key="frame" x="0.0" y="0.0" width="145" height="20"/>
@@ -28,9 +28,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tất cả hoá đơn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-Me-4ik">
-                                <rect key="frame" x="204" y="0.0" width="84" height="20"/>
+                                <rect key="frame" x="236" y="0.0" width="84" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.38039215686274508" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -44,8 +44,8 @@
                             <constraint firstItem="QTH-4w-wOb" firstAttribute="leading" secondItem="Q6q-gv-7E5" secondAttribute="leading" id="hOv-SP-lsD"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-WB-d9O">
-                        <rect key="frame" x="300" y="15" width="14" height="14"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 958476658" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-WB-d9O">
+                        <rect key="frame" x="312" y="15" width="14" height="14"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="l84-YN-Ten"/>
                             <constraint firstAttribute="width" constant="14" id="nK5-Vi-0XW"/>
@@ -54,11 +54,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="g7d-WB-d9O" firstAttribute="centerY" secondItem="Q6q-gv-7E5" secondAttribute="centerY" multiplier="0.65" id="6Sz-gH-OkU"/>
-                    <constraint firstItem="Q6q-gv-7E5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IA4-au-Hc1"/>
-                    <constraint firstAttribute="trailing" secondItem="Q6q-gv-7E5" secondAttribute="trailing" constant="16" id="SfO-jI-RcU"/>
-                    <constraint firstItem="Q6q-gv-7E5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="agW-0u-7yU"/>
+                    <constraint firstItem="Q6q-gv-7E5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IA4-au-Hc1"/>
+                    <constraint firstAttribute="trailing" secondItem="Q6q-gv-7E5" secondAttribute="trailing" id="SfO-jI-RcU"/>
+                    <constraint firstItem="Q6q-gv-7E5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="750" constant="24" id="agW-0u-7yU"/>
                     <constraint firstAttribute="bottom" secondItem="Q6q-gv-7E5" secondAttribute="bottom" constant="24" id="cUa-dA-BBP"/>
-                    <constraint firstAttribute="trailing" secondItem="g7d-WB-d9O" secondAttribute="trailing" constant="6" id="hiR-Wr-I67"/>
+                    <constraint firstAttribute="trailing" secondItem="g7d-WB-d9O" secondAttribute="trailing" constant="-6" id="hiR-Wr-I67"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -66,6 +66,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Frame 958476658" width="14" height="14"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
